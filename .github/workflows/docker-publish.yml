@@ -12,7 +12,7 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repository
+      - name: checkout repository 
         uses: actions/checkout@v4
       - name: set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -31,3 +31,4 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          
