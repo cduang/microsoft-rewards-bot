@@ -6,7 +6,7 @@ on:
   workflow_dispatch:  # ← 添加这个触发器
 
 env:
-  REGISTRY: ghcr.nju.edu.cn
+  REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
